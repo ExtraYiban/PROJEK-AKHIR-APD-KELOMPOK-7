@@ -55,7 +55,7 @@ def update_vehicle():
             v["brand"] = input(f"Merek ({v['brand']}): ").strip() or v["brand"]
             v["model"] = input(f"Model ({v['model']}): ").strip() or v["model"]
             v["plate"] = input(f"Plat ({v['plate']}): ").strip() or v["plate"]
-            v["price"] = input(f"Plat ({v['price']}): ").strip() or v["price"]
+            v["price"] = input(f"Harga ({v['price']}): ").strip() or v["price"]
             write_csv(VEHICLE_FILE, vehicles, VEHICLE_FIELDS)
             print(done + "\nKendaraan berhasil diperbarui!")
             return
