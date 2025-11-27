@@ -52,7 +52,6 @@ def update_vehicle():
     for v in vehicles:
         if v["id"] == vid:
             print(f"\nMengupdate kendaraan: {v['brand']} {v['model']} ({v['plate']})")
-            v["type"] = input(f"Tipe ({v['type']}): ").strip() or v["type"]
             v["brand"] = input(f"Merek ({v['brand']}): ").strip() or v["brand"]
             v["model"] = input(f"Model ({v['model']}): ").strip() or v["model"]
             v["plate"] = input(f"Plat ({v['plate']}): ").strip() or v["plate"]
