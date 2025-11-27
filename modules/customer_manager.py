@@ -1,6 +1,7 @@
 from prettytable import PrettyTable
-from utils.file_handler import read_csv, write_csv
+
 from utils.common import *
+from utils.file_handler import read_csv, write_csv
 
 CUSTOMER_FILE = "data/customers.csv"
 CUSTOMER_FIELDS = ["id", "name", "phone", "license"]

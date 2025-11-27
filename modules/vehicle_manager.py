@@ -1,13 +1,11 @@
-from prettytable import PrettyTable
-from utils.file_handler import read_csv, write_csv
-from utils.common import *
 import questionary
+from prettytable import PrettyTable
+
+from utils.common import *
+from utils.file_handler import read_csv, write_csv
 
 VEHICLE_FILE = "data/vehicles.csv"
 VEHICLE_FIELDS = ["id", "type", "brand", "model", "plate", "status", "price"]
-
-def clear_screen():
-    os.system("cls || clear")
 
 def list_vehicles():
     vehicles = read_csv(VEHICLE_FILE)
